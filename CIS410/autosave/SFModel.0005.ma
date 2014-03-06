@@ -1,6 +1,6 @@
 //Maya ASCII 2014 scene
-//Name: SFModel.ma
-//Last modified: Thu, Mar 06, 2014 12:58:07 PM
+//Name: SFModel.0005.ma
+//Last modified: Thu, Mar 06, 2014 12:56:57 PM
 //Codeset: 1252
 requires maya "2014";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOutputPass" -nodeType "mentalrayRenderPass"
@@ -91,15 +91,15 @@ fileInfo "osv" "Microsoft Windows 7 Ultimate Edition, 64-bit Windows 7  (Build 7
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 37.138087895490635 19.725837075182064 -3.4209637139201372 ;
-	setAttr ".r" -type "double3" 332.39999999975453 95.199999999998113 -2.5444437451708134e-014 ;
+	setAttr ".t" -type "double3" 27.451111683799262 15.573537648143677 -5.2935711156399847 ;
+	setAttr ".r" -type "double3" 151.1999999997804 79.200000000575187 -179.9999999999998 ;
 	setAttr ".rp" -type "double3" -1.3877787807814457e-017 2.1371793224034263e-015 -7.1054273576010019e-015 ;
 	setAttr ".rpt" -type "double3" -3.7511763198176976e-015 -2.4474464602434596e-015 
 		7.3929875374970728e-015 ;
 createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 59.016377938008979;
-	setAttr ".coi" 41.838230785813046;
+	setAttr ".coi" 31.890792155432315;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -49525,4 +49525,4 @@ connectAttr "hand.msg" ":defaultShaderList1.s" -na;
 connectAttr "foot.msg" ":defaultShaderList1.s" -na;
 connectAttr "monster:lambert2.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-// End of SFModel.ma
+// End of SFModel.0005.ma
