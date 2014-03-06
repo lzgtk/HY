@@ -7,7 +7,7 @@ from pyglass.widgets.PyGlassWidget import PyGlassWidget
 import random
 
 #___________________________________________________________________________________________________ Assignment2Widget
-class Assignment3Widget(PyGlassWidget):
+class Assignment4Widget(PyGlassWidget):
     """A class for..."""
 
 #===================================================================================================
@@ -16,11 +16,12 @@ class Assignment3Widget(PyGlassWidget):
 #___________________________________________________________________________________________________ __init__
     def __init__(self, parent, **kwargs):
         """Creates a new instance of Assignment2Widget."""
-        super(Assignment3Widget, self).__init__(parent, **kwargs)
+        super(Assignment4Widget, self).__init__(parent, **kwargs)
         self.homeBtn.clicked.connect(self._handleReturnHome)
-        self.perturbBtn.clicked.connect(self._handlePerturbButton)
-        self.defendBtn.clicked.connect(self._handelDefendButton)
-        self.playBtn.clicked.connect(self._handelPlayButton)
+        self.speakBtn.clicked.connect(self._handleSpeakButton)
+        self.dieBtn.clicked.connect(self._handleDieButton)
+        self.defendBtn.clicked.connect(self._handleDefendButton)
+        self.playBtn.clicked.connect(self._handlePlayButton)
 #===================================================================================================
 #                                                                                 H A N D L E R S
 
@@ -29,7 +30,7 @@ class Assignment3Widget(PyGlassWidget):
         self.mainWindow.setActiveWidget('home')
 
     #perturb each vertex for the selected object list
-    def _handlePerturbButton(self):
+    '''def _handlePerturbButton(self):
         selectObjs = cmds.ls(selection = True, type='transform')
         if len(selectObjs) >= 1:
             for objName in selectObjs:
@@ -48,29 +49,38 @@ class Assignment3Widget(PyGlassWidget):
                 cmds.polyMoveVertex(selectObj+'.vtx['+str(i)+']', t=[x, y, z])
         else:
             print "Please check if Max >= Min"
+    '''
+    def _handleSpeakButton(self):
+        #attack
+        
+        #me
+        #by
+        #Ball
 
+    def _handleDieButton(self):
+        print "die"
     #show the defend action for the monster
-    def _handelDefendButton(self):
+    def _handleDefendButton(self):
         #driven: all arms and joint; driver: the translateX of the ball
         self._rightArmDrivenKeyframe()
         #set the new values
         cmds.move( -2.5, 0, 0, 'ball', relative=True)
-        cmds.rotate('-54', '82', '0', 'SF|SFBody|RShoulderJoint|RightArm')
-        cmds.rotate('19', '147', '90', 'SF|SFBody|RShoulderJoint|RightArm|RHandJoint|RHand')
+        cmds.rotate('-54', '82', '0', 'SF|RShoulderJoint|RightArm')
+        cmds.rotate('19', '147', '90', 'SF|RShoulderJoint|RightArm|RHandJoint|RHand')
 
         #reset driven: all arms and joint; driver: the translateX of the ball
         self._rightArmDrivenKeyframe()
 
     #keyframe for the right arm defend action
     def _rightArmDrivenKeyframe(self):
-        cmds.setDrivenKeyframe('SF|SFBody|RShoulderJoint|RightArm|RHandJoint|RHand.rotateX',currentDriver='ball.translateX')
-        cmds.setDrivenKeyframe('SF|SFBody|RShoulderJoint|RightArm|RHandJoint|RHand.rotateY',currentDriver='ball.translateX')
-        cmds.setDrivenKeyframe('SF|SFBody|RShoulderJoint|RightArm|RHandJoint|RHand.rotateZ',currentDriver='ball.translateX')
-        cmds.setDrivenKeyframe('SF|SFBody|RShoulderJoint|RightArm.rotateX',currentDriver='ball.translateX')
-        cmds.setDrivenKeyframe('SF|SFBody|RShoulderJoint|RightArm.rotateY',currentDriver='ball.translateX')
-        cmds.setDrivenKeyframe('SF|SFBody|RShoulderJoint|RightArm.rotateZ',currentDriver='ball.translateX')
+        cmds.setDrivenKeyframe('SF|RShoulderJoint|RightArm|RHandJoint|RHand.rotateX',currentDriver='ball.translateX')
+        cmds.setDrivenKeyframe('SF|RShoulderJoint|RightArm|RHandJoint|RHand.rotateY',currentDriver='ball.translateX')
+        cmds.setDrivenKeyframe('SF|RShoulderJoint|RightArm|RHandJoint|RHand.rotateZ',currentDriver='ball.translateX')
+        cmds.setDrivenKeyframe('SF|RShoulderJoint|RightArm.rotateX',currentDriver='ball.translateX')
+        cmds.setDrivenKeyframe('SF|RShoulderJoint|RightArm.rotateY',currentDriver='ball.translateX')
+        cmds.setDrivenKeyframe('SF|RShoulderJoint|RightArm.rotateZ',currentDriver='ball.translateX')
 
-    def _handelPlayButton(self):
+    def _handlePlayButton(self):
         #time frame
         startTime=cmds.playbackOptions(query=True, minTime=True)
         endTime=cmds.playbackOptions(query=True, maxTime=True)
