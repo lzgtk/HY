@@ -1,6 +1,6 @@
 //Maya ASCII 2014 scene
-//Name: SFModel.ma
-//Last modified: Mon, Mar 10, 2014 03:53:32 PM
+//Name: SFModel.0050.ma
+//Last modified: Mon, Mar 10, 2014 04:43:51 PM
 //Codeset: 1252
 requires maya "2014";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOutputPass" -nodeType "mentalrayRenderPass"
@@ -28437,13 +28437,13 @@ createNode camera -n "sceneShape3" -p "scene3";
 	setAttr ".man" -type "string" "persp1_mask";
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -n "scene4";
-	setAttr ".t" -type "double3" 13.137052125335838 5.0527233133503717 5.4887942295272953 ;
-	setAttr ".r" -type "double3" -15.93835272960262 54.600000000000435 -1.3726299219259219e-015 ;
+	setAttr ".t" -type "double3" 13.684684156654532 4.9124000729909865 4.7295794096520059 ;
+	setAttr ".r" -type "double3" -15.338352729602757 58.600000000000463 -1.5261496559226648e-015 ;
 createNode camera -n "sceneShape4" -p "scene4";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 13.915046056551262;
+	setAttr ".coi" 13.915046056550082;
 	setAttr ".imn" -type "string" "persp1";
 	setAttr ".den" -type "string" "persp1_depth";
 	setAttr ".man" -type "string" "persp1_mask";
@@ -31451,8 +31451,8 @@ createNode animCurveTA -n "Scene1Camera_rotateZ";
 	setAttr -s 3 ".kox[0:2]"  1 1 1;
 	setAttr -s 3 ".koy[0:2]"  0 0 0;
 select -ne :time1;
-	setAttr ".o" 115;
-	setAttr ".unw" 115;
+	setAttr ".o" 139;
+	setAttr ".unw" 139;
 select -ne :renderPartition;
 	setAttr -s 7 ".st";
 select -ne :initialShadingGroup;
@@ -32276,4 +32276,4 @@ connectAttr "monster:lambert2.msg" ":defaultShaderList1.s" -na;
 connectAttr "monster7:lambert2.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr ":perspShape.msg" ":defaultRenderGlobals.sc";
-// End of SFModel.ma
+// End of SFModel.0050.ma
