@@ -1,6 +1,6 @@
 //Maya ASCII 2014 scene
-//Name: SFModel.ma
-//Last modified: Tue, Mar 11, 2014 03:37:15 PM
+//Name: SFModel.0068.ma
+//Last modified: Sun, Mar 16, 2014 11:01:46 AM
 //Codeset: 1252
 requires maya "2014";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOutputPass" -nodeType "mentalrayRenderPass"
@@ -27306,13 +27306,13 @@ createNode camera -n "sceneShape3" -p "scene3";
 	setAttr ".man" -type "string" "persp1_mask";
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -n "scene4";
-	setAttr ".t" -type "double3" 23.794392575743437 17.445696164235102 70.630569636552281 ;
+	setAttr ".t" -type "double3" 19.676240088328434 12.487415842117461 49.4445117190334 ;
 	setAttr ".r" -type "double3" -12.938352729616978 10.999999999994994 2.0250525957654965e-016 ;
 createNode camera -n "sceneShape4" -p "scene4";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 71.545328224441405;
+	setAttr ".coi" 49.400514525817407;
 	setAttr ".imn" -type "string" "persp1";
 	setAttr ".den" -type "string" "persp1_depth";
 	setAttr ".man" -type "string" "persp1_mask";
@@ -30398,8 +30398,6 @@ select -ne :hardwareRenderingGlobals;
 select -ne :defaultHardwareRenderGlobals;
 	setAttr ".fn" -type "string" "im";
 	setAttr ".res" -type "string" "ntsc_4d 646 485 1.333";
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr "SF_translateX.o" "SF.tx";
 connectAttr "SF_translateY.o" "SF.ty";
 connectAttr "SF_translateZ.o" "SF.tz";
@@ -31190,4 +31188,4 @@ connectAttr "monster:lambert2.msg" ":defaultShaderList1.s" -na;
 connectAttr "monster7:lambert2.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr ":perspShape.msg" ":defaultRenderGlobals.sc";
-// End of SFModel.ma
+// End of SFModel.0068.ma
