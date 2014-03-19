@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>608</width>
+    <width>666</width>
     <height>422</height>
    </rect>
   </property>
@@ -15,40 +15,74 @@
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <item>
-    <widget class="QWidget" name="widget_2" native="true">
+    <widget class="QWidget" name="controlsBox" native="true">
      <layout class="QVBoxLayout" name="verticalLayout">
       <item>
-       <widget class="QPushButton" name="assignment1Btn">
+       <widget class="QLabel" name="label">
         <property name="text">
-         <string>Assignment 1</string>
+         <string>Assignment 5</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="assignment2Btn">
+       <widget class="QLabel" name="label_2">
         <property name="text">
-         <string>Assignment 2</string>
+         <string>How many dust in the air?(Suggest 100)</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="assignment3Btn">
+       <widget class="QLineEdit" name="dustNum"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="duplicatedBtn">
         <property name="text">
-         <string>Assignment 3</string>
+         <string>Create Dust</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="assignment4Btn">
+       <widget class="QLabel" name="label_3">
         <property name="text">
-         <string>Hanqing's Work</string>
+         <string>How many bricks on the road? (Suggest 100)</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="assignment5Btn">
+       <widget class="QLineEdit" name="bricksNum"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="roadBtn">
         <property name="text">
-         <string>Yakun's Work</string>
+         <string>Create Road</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="aimedBtn">
+        <property name="text">
+         <string>Aim At</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="rotate">
+        <property name="text">
+         <string>Rotate</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="playBtn">
+        <property name="text">
+         <string>Play</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="homeBtn">
+        <property name="text">
+         <string>Return Home</string>
         </property>
        </widget>
       </item>
@@ -75,7 +109,7 @@
      </property>
      <property name="sizeHint" stdset="0">
       <size>
-       <width>438</width>
+       <width>40</width>
        <height>20</height>
       </size>
      </property>

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>591</width>
+    <width>558</width>
     <height>422</height>
    </rect>
   </property>
@@ -25,13 +25,6 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="speakBtn">
-        <property name="text">
-         <string>Speak</string>
-        </property>
-       </widget>
-      </item>
-      <item>
        <widget class="QPushButton" name="defendBtn">
         <property name="text">
          <string>Defend</string>
@@ -39,9 +32,30 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="dieBtn">
+       <widget class="QPushButton" name="loadSoundBtn">
         <property name="text">
-         <string>Die</string>
+         <string>Load Sound</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="setBallBtn">
+        <property name="text">
+         <string>Set Ball Track</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ballBtn">
+        <property name="text">
+         <string>Change Ball</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="restoreBtn">
+        <property name="text">
+         <string>Restore</string>
         </property>
        </widget>
       </item>
@@ -76,13 +90,105 @@
     </widget>
    </item>
    <item>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="2">
+      <widget class="QPushButton" name="scene3Btn">
+       <property name="text">
+        <string>Set Track Ball</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="scene2Btn">
+       <property name="text">
+        <string>Set Track Y</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="scene4Btn">
+       <property name="text">
+        <string>Set Far Camera</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="scene1Btn">
+       <property name="text">
+        <string>Set Track H</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QPushButton" name="cn5Btn">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Movie</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="cn2Btn">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Scene 2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="cn4Btn">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Scene 4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QPushButton" name="scene5Btn">
+       <property name="text">
+        <string>Movie View</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="cn3Btn">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Scene 3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="cn1Btn">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Scene 1</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
     <spacer name="horizontalSpacer">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>
-       <width>439</width>
+       <width>40</width>
        <height>20</height>
       </size>
      </property>

@@ -26,6 +26,7 @@ class MayaPyHomeWidget(PyGlassWidget):
         self.assignment2Btn.clicked.connect(self._handleAssignment2)
         self.assignment3Btn.clicked.connect(self._handleAssignment3)
         self.assignment4Btn.clicked.connect(self._handleAssignment4)
+        self.assignment5Btn.clicked.connect(self._handleAssignment5)
 
         self._statusBox, statusLayout = self._createElementWidget(self, QtGui.QVBoxLayout, True)
         statusLayout.addStretch()
@@ -60,3 +61,6 @@ class MayaPyHomeWidget(PyGlassWidget):
 #___________________________________________________________________________________________________ _handleAssignment4
     def _handleAssignment4(self):
         self.mainWindow.setActiveWidget('assignment4')
+#___________________________________________________________________________________________________ _handleAssignment5
+    def _handleAssignment5(self):
+        self.mainWindow.setActiveWidget('YakunWork')

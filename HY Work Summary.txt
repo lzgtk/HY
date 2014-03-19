@@ -1,0 +1,24 @@
+Project Name: HY
+Project Folder: CIS410
+Pycharm Project Folder: MayaPy
+Team Member: Hanqing Zhao, Yakun Diao
+
+Scene: Scenes/SFModel.ma
+Sound: Sound/AttackMeByBall.aiff
+
+Works on HY project:
+
+	Hanqing Zhao's Work:
+
+		1. Building the monster SF which is called 'H'
+		2. Working on the programming the camera
+		3. Working on the storyline design
+		4. Working on the sound editing
+	All the work can be seen on the "Hanqing's work" on the mayapy main window
+
+	Yakun Diao's Work:
+		1. Building the monster8 which is called 'Y'
+		2. Working on the environment setting's configuration
+		3. Working on the movie view design and providing part of data of the moving cameras
+	
+	Both of us are helping each other to finish each other's part during these whole project from the configuration to the end of the exciting fight.
